@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aguacate Fresh</title>
+<style>
+:root{
+--verde:#6b8e23;
+--beige:#f5f1e9;
+--tierra:#a1866f;
+--blanco:#ffffff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:sans-serif;background:var(--beige);color:#333}
+header{position:fixed;width:100%;top:0;background:var(--blanco);display:flex;justify-content:space-between;align-items:center;padding:15px 30px;border-bottom:1px solid #eee;z-index:1000}
+nav a{margin:0 15px;text-decoration:none;color:#333;font-weight:500}
+section{padding:100px 20px;max-width:1000px;margin:auto}
+.hero{background:url('https://images.unsplash.com/photo-1604908811925-6f5c1c8e9b7e') center/cover no-repeat;color:white;text-align:center;padding:140px 20px;border-radius:0 0 40px 40px}
+.hero h1{font-size:42px;margin-bottom:10px}
+.hero p{opacity:0.9}
+.btn{background:var(--verde);color:white;padding:12px 25px;border:none;border-radius:25px;cursor:pointer;margin-top:15px}
+.card{background:var(--blanco);border-radius:20px;padding:25px;margin:15px 0;box-shadow:0 5px 15px rgba(0,0,0,0.05)}
+.flex{display:flex;flex-wrap:wrap;gap:15px}
+.flex .card{flex:1 1 200px;text-align:center}
+.accordion{cursor:pointer;padding:15px;border:none;width:100%;text-align:left;background:var(--blanco);margin:8px 0;border-radius:15px;font-size:16px}
+.panel{display:none;padding:10px 15px}
+form input,form select,form textarea{width:100%;padding:12px;margin:8px 0;border-radius:12px;border:1px solid #ddd}
+.success{color:var(--verde);margin-top:10px;display:none}
+footer{text-align:center;padding:30px;color:#777}
+</style>
+</head>
+<body>
+<header>
+<h3>🥑 Aguacate Fresh</h3>
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
+</nav>
+</header>
+
+<section class="hero" id="inicio">
+<h1>Frescura natural en cada bocado</h1>
+<p>Productos de aguacate listos para disfrutar</p>
+<button class="btn">Hacer pedido</button>
+</section>
+
+<section id="nosotros">
+<div class="card">
+<h2>Nosotros</h2>
+<p><strong>¿Quiénes somos?</strong><br>Empresa dedicada a la producción de productos de aguacate al vacío, ofreciendo calidad, frescura y practicidad.</p>
+<p><strong>Misión:</strong> Brindar productos naturales, saludables y listos para consumir.</p>
+<p><strong>Visión:</strong> Ser una marca reconocida por su calidad e innovación.</p>
+<p><strong>Valores:</strong> Calidad · Frescura · Honestidad · Compromiso · Sustentabilidad</p>
+</div>
+</section>
+
+<section id="productos">
+<h2>Productos</h2>
+<button class="accordion">🥑 Guacamole</button>
+<div class="panel">Producto listo para consumir, fresco y natural.</div>
+<button class="accordion">🥣 Dips</button>
+<div class="panel">Variedad de sabores ideales para botanas.</div>
+<button class="accordion">🧃 Pulpa</button>
+<div class="panel">Perfecta para recetas.</div>
+<button class="accordion">🥑 Rebanadas</button>
+<div class="panel">Listas para ensaladas.</div>
+<button class="accordion">🍟 Chips</button>
+<div class="panel">Snack saludable y crujiente.</div>
+</section>
+
+<section>
+<h2>Beneficios</h2>
+<div class="flex">
+<div class="card">100% natural</div>
+<div class="card">Sin conservadores</div>
+<div class="card">Empacado al vacío</div>
+<div class="card">Listo para consumir</div>
+<div class="card">Rico en nutrientes</div>
+</div>
+</section>
+
+<section id="contacto">
+<div class="card">
+<h2>Pedido</h2>
+<form id="form">
+<input type="text" placeholder="Nombre completo" required>
+<input type="tel" placeholder="Teléfono" required>
+<input type="email" placeholder="Correo electrónico" required>
+<select required>
+<option>Guacamole</option>
+<option>Dips</option>
+<option>Pulpa</option>
+<option>Rebanadas</option>
+<option>Chips</option>
+</select>
+<input type="number" placeholder="Cantidad" required>
+<input type="dat
