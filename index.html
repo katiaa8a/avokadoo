@@ -20,15 +20,11 @@ body{
 margin:0;
 font-family:sans-serif;
 color:#333;
-
-/* Fondo con tu imagen */
 background: linear-gradient(rgba(245,241,233,0.9), rgba(245,241,233,0.9)),
 url('image.png') no-repeat center center fixed;
-
 background-size:cover;
 }
 
-/* HEADER */
 header{
 position:fixed;
 width:100%;
@@ -49,14 +45,12 @@ color:#333;
 font-weight:500;
 }
 
-/* SECCIONES */
 section{
 padding:100px 20px;
 max-width:1100px;
 margin:auto;
 }
 
-/* HERO */
 .hero{
 background:rgba(0,0,0,0.35);
 backdrop-filter:blur(4px);
@@ -66,10 +60,7 @@ padding:150px 20px;
 border-radius:0 0 40px 40px;
 }
 
-.hero h1{
-font-size:45px;
-margin-bottom:10px;
-}
+.hero h1{font-size:45px}
 
 .btn{
 background:var(--verde);
@@ -81,18 +72,12 @@ cursor:pointer;
 margin-top:15px;
 }
 
-/* CARDS */
 .card{
 background:var(--blanco);
 border-radius:20px;
 padding:25px;
 margin:15px 0;
 box-shadow:0 8px 25px rgba(0,0,0,0.05);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
 }
 
 .flex{
@@ -106,13 +91,11 @@ flex:1 1 250px;
 text-align:center;
 }
 
-/* IMÁGENES */
 img{
 width:100%;
 border-radius:15px;
 }
 
-/* ACORDEÓN */
 .accordion{
 cursor:pointer;
 padding:15px;
@@ -122,16 +105,10 @@ text-align:left;
 background:var(--blanco);
 margin:8px 0;
 border-radius:15px;
-font-size:16px;
 }
 
-.panel{
-display:none;
-padding:10px 15px;
-color:var(--gris);
-}
+.panel{display:none;padding:10px;color:var(--gris)}
 
-/* FORM */
 form input, form select, form textarea{
 width:100%;
 padding:12px;
@@ -140,48 +117,9 @@ border-radius:12px;
 border:1px solid #ddd;
 }
 
-.success{
-color:var(--verde);
-margin-top:10px;
-display:none;
-}
+.success{color:var(--verde);display:none}
 
-/* TESTIMONIOS */
-.testimonial{
-font-style:italic;
-color:#555;
-}
-
-/* WHATSAPP */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-font-size:20px;
-}
-
-/* ANIMACIONES */
-.fade{
-opacity:0;
-transform:translateY(20px);
-transition:0.6s;
-}
-
-.fade.visible{
-opacity:1;
-transform:translateY(0);
-}
-
-footer{
-text-align:center;
-padding:30px;
-color:#777;
-}
+footer{text-align:center;padding:30px;color:#777}
 </style>
 </head>
 
@@ -197,26 +135,21 @@ color:#777;
 </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero" id="inicio">
 <h1>Frescura natural en cada bocado</h1>
-<p>Productos de aguacate listos para disfrutar</p>
+<p>Productos de aguacate 100% naturales</p>
 <button class="btn" onclick="scrollToForm()">Hacer pedido</button>
 </section>
 
-<!-- NOSOTROS -->
-<section id="nosotros" class="fade">
+<section id="nosotros">
 <div class="card">
 <h2>Sobre nosotros</h2>
-<p>Somos una empresa dedicada a la producción de productos de aguacate empacados al vacío, garantizando frescura y calidad.</p>
-<img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a">
-<p><strong>Misión:</strong> Brindar alimentos naturales y saludables.</p>
-<p><strong>Visión:</strong> Ser líderes en innovación de productos de aguacate.</p>
+<img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba">
+<p>Nos especializamos en productos derivados del aguacate, manteniendo su frescura y calidad.</p>
 </div>
 </section>
 
-<!-- PRODUCTOS -->
-<section id="productos" class="fade">
+<section id="productos">
 <h2>Productos</h2>
 
 <div class="flex">
@@ -227,22 +160,25 @@ color:#777;
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1604908176997-4316f4a64c3d">
-<h3>Dips</h3>
+<h3>Dips de aguacate</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a">
+<h3>Pulpa de aguacate</h3>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1584270354949-1d0b1d5d295f">
-<h3>Pulpa</h3>
+<h3>Rebanadas de aguacate</h3>
 </div>
 </div>
 
 <button class="accordion">🍟 Chips de aguacate</button>
-<div class="panel">Snack saludable, crujiente y delicioso.</div>
-
+<div class="panel">Snack saludable hecho a base de aguacate.</div>
 </section>
 
-<!-- BENEFICIOS -->
-<section class="fade">
+<section>
 <h2>Beneficios</h2>
 <div class="flex">
 <div class="card">100% natural</div>
@@ -253,23 +189,13 @@ color:#777;
 </div>
 </section>
 
-<!-- TESTIMONIOS -->
-<section class="fade">
-<h2>Testimonios</h2>
-<div class="card testimonial">“El mejor guacamole que he probado.”</div>
-<div class="card testimonial">“Súper práctico y delicioso.”</div>
-</section>
-
-<!-- FORMULARIO -->
-<section id="contacto" class="fade">
+<section id="contacto">
 <div class="card">
 <h2>Realiza tu pedido</h2>
-
 <form id="form">
 <input type="text" placeholder="Nombre completo" required>
 <input type="tel" placeholder="Teléfono" required>
 <input type="email" placeholder="Correo electrónico" required>
-
 <select required>
 <option>Guacamole</option>
 <option>Dips</option>
@@ -277,38 +203,24 @@ color:#777;
 <option>Rebanadas</option>
 <option>Chips</option>
 </select>
-
 <input type="number" placeholder="Cantidad" required>
 <input type="date" required>
-
 <textarea placeholder="Comentarios adicionales"></textarea>
-
 <button class="btn" type="submit">Enviar pedido</button>
-
-<div class="success" id="successMsg">
-✔ Gracias, tu pedido ha sido enviado.<br>
-⏳ Procesando solicitud...<br>
-📞 Te contactaremos pronto.
-</div>
+<div class="success" id="successMsg">✔ Pedido enviado correctamente</div>
 </form>
-
 </div>
 </section>
 
-<!-- WHATSAPP -->
-<a href="#" class="whatsapp">💬</a>
-
 <footer>
-<p>© 2026 Aguacate Fresh · Natural y fresco</p>
+<p>© 2026 Aguacate Fresh</p>
 </footer>
 
 <script>
-// Scroll botón
 function scrollToForm(){
 document.getElementById('contacto').scrollIntoView({behavior:'smooth'});
 }
 
-// Acordeón
 document.querySelectorAll('.accordion').forEach(btn=>{
 btn.addEventListener('click',()=>{
 let panel=btn.nextElementSibling;
@@ -316,25 +228,12 @@ panel.style.display=panel.style.display==='block'?'none':'block';
 });
 });
 
-// Formulario
 document.getElementById('form').addEventListener('submit',function(e){
 e.preventDefault();
 let msg=document.getElementById('successMsg');
 msg.style.display='block';
-window.scrollTo({top:0,behavior:'smooth'});
 this.reset();
-setTimeout(()=>{msg.style.display='none'},5000);
-});
-
-// Animaciones
-const faders=document.querySelectorAll('.fade');
-window.addEventListener('scroll',()=>{
-faders.forEach(el=>{
-const rect=el.getBoundingClientRect();
-if(rect.top<window.innerHeight-50){
-el.classList.add('visible');
-}
-});
+setTimeout(()=>{msg.style.display='none'},4000);
 });
 </script>
 
